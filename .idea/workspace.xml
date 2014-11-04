@@ -26,7 +26,7 @@
       <file leaf-file-name="CoolWater.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="248" column="18" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.56198347" vertical-offset="3876" max-vertical-offset="7378">
+            <state line="266" column="18" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.49421486" vertical-offset="4223" max-vertical-offset="7378">
               <folding />
             </state>
           </provider>
@@ -206,7 +206,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="1260" height="760" extended-state="1" />
+    <frame x="10" y="0" width="1260" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,7 +521,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="18" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.56198347" vertical-offset="3876" max-vertical-offset="7378">
+        <state line="266" column="18" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.49421486" vertical-offset="4223" max-vertical-offset="7378">
           <folding />
         </state>
       </provider>

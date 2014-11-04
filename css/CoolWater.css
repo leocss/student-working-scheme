@@ -264,7 +264,7 @@ input.button {
 	text-decoration: none;	
 }
 #header #header-links a:hover {
-	color: #D4FF55;	
+	color: #000000;
 }
 
 /* navigation */
@@ -293,10 +293,10 @@ input.button {
 	background: url(../images/sep.jpg) no-repeat 100% 100%;
 }
 #menu ul li a:hover {
-	color: #3b5e0b;	
+	color: #000000;
 }
 #menu ul li.current a {	
-	color: #3b5e0b;
+	color: #000000;
 }
 
 /* Main Column */
