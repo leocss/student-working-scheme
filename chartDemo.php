@@ -37,12 +37,12 @@
           vAxis: {   title: 'Name',  
                      titleTextStyle: {color: 'red'}
                  },
-          colors: ['#c7cfc7', '#b2c8b2']       
+          colors: ['#c7cfc7', '#b2c8b2']
         };
         
         var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
         //var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-      //  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      // var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
       //  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
