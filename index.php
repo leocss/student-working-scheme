@@ -94,6 +94,8 @@ if($_POST['chart'] == 'Chart' && $_POST['startDate'] != NULL && $_POST['endDate'
         <script>
             window.onload = menuSelect('menuHome');
         </script>
+
+
     </head>
     <body>
         <!-- wrap starts here -->

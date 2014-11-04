@@ -88,9 +88,9 @@ $output = array(
 for ($i = 0; $i < count($rResult); $i++) {
    $row = array();
    $row = $rResult[$i];
- //  $row['edit'] = "<a href='EmployeeRegister.php?EmpID={$row['EmpID']}' >Edit</a>";
-   $row['salary'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' >Salary Detail</a>";
-//   $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' >Delete</a>";
+ // $row['edit'] = "<a href='EmployeeRegister.php?EmpID={$row['EmpID']}' >Edit</a>";
+   $row['salary'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' > Salary Detail</a>";
+//  $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' >Delete</a>";
    $row['edit'] = "<a href='EmployeeRegister.php?EmpID={$row['EmpID']}' ><img src='".ROOT."images/edit.gif' ></a>";
    $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='".ROOT."images/delete.gif' ></a>";
    $output['aaData'][] = $row;

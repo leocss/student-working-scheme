@@ -96,8 +96,9 @@ if($EmpID != NULL){
                             <option value="cpt" <?php echo $result[0]['EmpTechnology'] == 'cpt' ? 'selected' : ''; ?> >CPT</option>
                             <option value="imt" <?php echo $result[0]['EmpTechnology'] == 'imt' ? 'selected' : ''; ?> >IMT</option>
                             <option value="css" <?php echo $result[0]['EmpTechnology'] == 'css' ? 'selected' : ''; ?> >CSS</option>
-                            
                             <option value="cme" <?php echo $result[0]['EmpTechnology'] == 'cme' ? 'selected' : ''; ?> >CME</option>
+                            
+                            <option value="others" <?php echo $result[0]['EmpTechnology'] == 'others' ? 'selected' : ''; ?> >OTHERS</option>
                             
                             
                         </select>

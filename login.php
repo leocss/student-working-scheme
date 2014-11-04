@@ -12,7 +12,7 @@
             <?php //@require_once 'menu/header.php'; ?>
             <div id="header">
                 <h1 id="logo-text"><a href=".">Student Working Scheme</a></h1>
-                <p id="slogan">SICT Library</p>
+                <p id="slogan">SICT Library FUT MINNA</p>
                 <div id="header-links">
                 </div>
             </div>

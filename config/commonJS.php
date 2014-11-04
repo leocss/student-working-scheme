@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" href="css/CoolWater.css" type="text/css" />
+<!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <!-- validation start -->
@@ -16,7 +17,7 @@
 <!-- start dataTable-->
 <link rel="stylesheet" href="css/dataTable/demo_page.css" type="text/css" />
 <link rel="stylesheet" href="css/dataTable/demo_table_jui.css" type="text/css" />
-<link rel="stylesheet" href="css/dataTable/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" />        
+<link rel="stylesheet" href="css/dataTable/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" />
 <script type="text/javascript" language="javascript" src="js/dataTable/jquery.dataTables.js"></script>
 <!-- end dataTable-->
 
