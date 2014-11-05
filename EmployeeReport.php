@@ -3,6 +3,7 @@
 require_once 'config/session.php'; 
 require_once 'class/dbclass.php';
 require_once 'class/Attandanse.php';
+//include ('printform.php');
 $att = new Attandanse();
 $empList = $att->getEmployeeList();
 ?>
@@ -65,6 +66,12 @@ $empList = $att->getEmployeeList();
             <?php @require_once 'menu/menu.php'; ?>
 
             <!-- content-wrap starts here -->
+            <?php
+            $name ="individual";
+            ?>
+
+            <h3 class="report">  <?php echo "$name"; ?> </h3>
+            <div class="report"><?php include 'printform.php' ; ?></div>
             <div id="content-wrap">
                 <div id="main">				
 
@@ -111,8 +118,11 @@ $empList = $att->getEmployeeList();
                     </form>
                     <table id="AttendanceList" class='tbl' width="700px">
 						
-                    </table>   
-                    <div class="clear"></div>
+                    </table>
+                    <div class="clear">
+                        <input name="" type="button" value="Print" onclick="javascript:window.print()" style="cursor:pointer; float:left;" />
+
+                    </div>
                 </div>
             <?php @require_once 'menu/sidemenu.php'; ?>	
             <!-- content-wrap ends here -->

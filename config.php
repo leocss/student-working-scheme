@@ -3,7 +3,7 @@
 session_start();
 define("DB_SERVER", "localhost");
 
-define("DB_DATABASE", "working-scheme");
+define("DB_DATABASE", "attendance_system");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "");
 

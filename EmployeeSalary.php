@@ -62,6 +62,7 @@ if($EmpID != NULL){
             <?php @require_once 'menu/menu.php'; ?>
 
             <!-- content-wrap starts here -->
+            <div class="report"><?php include 'printform.php'; ?></div>
             <div id="content-wrap">
                 <div id="main">				
                     <?php echo $_SESSION['Msg']; ?>
@@ -139,6 +140,10 @@ if($EmpID != NULL){
             </center>
         </form>
                     <div class="clear"></div>
+                    <div class="clear">
+                        <input name="" type="button" value="Print" onclick="javascript:window.print()" style="cursor:pointer; float:left;" />
+
+                    </div>
          </div>
             <?php @require_once 'menu/sidemenu.php'; ?>	
             <!-- content-wrap ends here -->

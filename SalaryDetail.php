@@ -96,9 +96,15 @@ require_once 'class/dbclass.php';
             <?php @require_once 'menu/menu.php'; ?>
 
             <!-- content-wrap starts here -->
+            <?php
+            $name="Salary Details";
+            ?>
+
             <div id="content-wrap">
-                <div id="main">				
-                    <div class="clear"></div>
+
+                <div id="main">
+                    <h3 class="report">  <?php echo "$name"; ?> </h3>
+                    <div class="report"><?php include 'printform.php'; ?></div>
             <div>
             <table class="displayGrid tbl" id="dataList" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;" width="600px">
                         <thead>
@@ -121,8 +127,11 @@ require_once 'class/dbclass.php';
                         </tbody>
                     </table>
              </div>
-                    
-                <div class="clear"></div>
+
+                    <div class="clear">
+                        <input name="" type="button" value="Print" onclick="javascript:window.print()" style="cursor:pointer; float:left;" />
+
+                    </div>
                 </div>
             <?php @require_once 'menu/sidemenu.php'; ?>	
             <!-- content-wrap ends here -->

@@ -132,5 +132,6 @@ if($_POST['chart'] == 'Chart' && $_POST['startDate'] != NULL && $_POST['endDate'
             <?php @require_once 'menu/footer.php'; ?>
             <!-- wrap ends here -->
         </div>
+
     </body>
 </html>

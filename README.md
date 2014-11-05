@@ -3,7 +3,7 @@ student-working-scheme
 
 Codes written so far and would be seen shortly today....
 /**
-Elijah Abolaji
+Elijah Abolaji <tyabolaji@gmail.com>
 ****
 ***
 
@@ -15,6 +15,9 @@ I have a broken image link and will fix it ltr tonight. Finally, the delete func
 
 When you pul;l, install the sql schema via wamp, xamp or lamp as usual.
 Then you log in to see how it is
+
+Just added a print functionality so that reports generated can be printed . also thinking of adding an email module but remembered
+its jus for a local machine.
 
 user: admin
 pass:admin
