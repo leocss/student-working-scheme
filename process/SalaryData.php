@@ -94,12 +94,12 @@ for ($i = 0; $i < count($rResult); $i++) {
    $end = strtotime($row['IncrementDate']);
    $days_between = ($end - $start) / 86400;
    if($days_between<32){
-       $row['yes'] = "<a href='EmployeeSalaryUpdate.php?EmpID={$row['EmpID']}' ><img src='".ROOT."images/yes.gif' class='editIcon'></a>";
+       $row['yes'] = "<a href='EmployeeSalaryUpdate.php?EmpID={$row['EmpID']}' ><img src='images/yes.gif' class='editIcon'></a>";
    }else{
        $row['yes'] = "";
    }
-   $row['edit'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' ><img src='".ROOT."images/edit.gif' ></a>";
-   $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='".ROOT."images/delete.gif' ></a>";
+   $row['edit'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' ><img src='images/edit.gif' ></a>";
+   $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='images/delete.gif' ></a>";
    
    $output['aaData'][] = $row;
 }

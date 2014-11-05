@@ -102,16 +102,16 @@ if($_POST['chart'] == 'Chart' && $_POST['startDate'] != NULL && $_POST['endDate'
         <div id="wrap">
 
             <!--header -->
-            <?php @require_once 'menu/header.php'; ?>
+          <div class="noprint"> <?php @require_once 'menu/header.php'; ?>
 
             <!-- navigation -->	
             <?php @require_once 'menu/menu.php'; ?>
-
+                    </div>
             <!-- content-wrap starts here -->
             <div id="content-wrap">
                 <div id="main">				
 
-                    <form id="formSubmit" method="post" >
+                    <form id="formSubmit" method="post" class="noprint" >
                         <input type="hidden" name="type" value="view" />
                         <input type="text" class="validate[required]" readonly value='<?php echo $data['startDate']; ?>' name="startDate" id="startDate" />
                         <input type="text" class="validate[required]" readonly value='<?php echo $data['endDate']; ?>' name="endDate" id="endDate" />
@@ -120,16 +120,17 @@ if($_POST['chart'] == 'Chart' && $_POST['startDate'] != NULL && $_POST['endDate'
                     </form>
                     <table id="AttendanceList" class='tbl' width="700px">
 
-                    </table>   
-                    <div class="clear"></div>
+                    </table>
+                    <div class="clear"> <input name="" type="button" value="Print" onclick="javascript:window.print()" style="cursor:pointer; float:left;" />
+                    </div>
                     <div id="chart_div" style="width: 100%; height: 1000px;"></div>
-                    <div class="clear"></div>
+
                 </div>
             <?php @require_once 'menu/sidemenu.php'; ?>	
             <!-- content-wrap ends here -->
             </div>
             <!--footer starts here-->
-            <?php @require_once 'menu/footer.php'; ?>
+           <div class="noprint"><?php @require_once 'menu/footer.php'; ?></div>
             <!-- wrap ends here -->
         </div>
 

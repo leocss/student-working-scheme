@@ -33,7 +33,7 @@
         );
 
         var options = {
-          title: '<?php echo $days_between; ?> Day Report',
+          title: '<?php echo $days_between; ?> Days Report',
           vAxis: {   title: 'Name',  
                      titleTextStyle: {color: 'red'}
                  },
@@ -51,7 +51,6 @@
   </head>
   <body>
     <div id="chart_div" style="width: 100%; height: 1000px;">
-        <input name="" type="button" value="Print" onclick="javascript:window.print()" style="cursor:pointer; float:left;" />
 
     </div>
 

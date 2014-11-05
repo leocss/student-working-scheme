@@ -60,10 +60,10 @@ $empList = $att->getEmployeeList();
         <div id="wrap">
 
             <!--header -->
-            <?php @require_once 'menu/header.php'; ?>
+            <div class="noprint"><?php @require_once 'menu/header.php'; ?>
 
             <!-- navigation -->	
-            <?php @require_once 'menu/menu.php'; ?>
+            <?php @require_once 'menu/menu.php'; ?></div>
 
             <!-- content-wrap starts here -->
             <?php
@@ -128,7 +128,7 @@ $empList = $att->getEmployeeList();
             <!-- content-wrap ends here -->
             </div>
             <!--footer starts here-->
-            <?php @require_once 'menu/footer.php'; ?>
+           <div class="noprint"><?php @require_once 'menu/footer.php'; ?></div>
             <!-- wrap ends here -->
         </div>
     </body>

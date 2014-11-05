@@ -90,10 +90,10 @@ require_once 'class/dbclass.php';
         <div id="wrap">
 
             <!--header -->
-            <?php @require_once 'menu/header.php'; ?>
+           <div class="noprint"> <?php @require_once 'menu/header.php'; ?>
 
             <!-- navigation -->	
-            <?php @require_once 'menu/menu.php'; ?>
+            <?php @require_once 'menu/menu.php'; ?></div>
 
             <!-- content-wrap starts here -->
             <?php
@@ -118,9 +118,9 @@ require_once 'class/dbclass.php';
                                 <th colspan="3" width="170px">Action</th>
                             </tr>
                             <tr>
-                               <th></th>
-                               <th></th>
-                               <th></th>
+                               <th>yes</th>
+                               <th>edit</th>
+                               <th>delete</th>
                             </tr>
                         </thead>
                         <tbody>	
@@ -137,7 +137,7 @@ require_once 'class/dbclass.php';
             <!-- content-wrap ends here -->
             </div> 
             <!--footer starts here-->
-            <?php @require_once 'menu/footer.php'; ?>
+            <div class="noprint"><?php @require_once 'menu/footer.php'; ?></div>
             <!-- wrap ends here -->
         </div>
     </body>

@@ -22,7 +22,7 @@ include ('config/config.php');
 
 <body bgcolor="#dedede" style="width: 939px;">
 
-<h1 class="report">Report <?php echo date("Y-m-d"); ?></h1>
+<h1 class="report">Report <?php echo date("Y-m-d  G:i:s"); ?></h1>
 
 
 </body>
