@@ -3,8 +3,8 @@ require_once '../config/config.php';
 require_once '../class/dbclass.php';
 $db = new MySQLCN();
 
-$aColumns = array('e.EmpID','e.EmpName','s.EmpType','s.CurrentSalary','s.IncrementAmount','s.IncrementDate');
-$aResultColumns = array('e.EmpID','e.EmpName','s.*');
+$aColumns = array('e.EmpID', 'e.EmpName', 's.EmpType', 's.CurrentSalary', 's.IncrementAmount', 's.IncrementDate');
+$aResultColumns = array('e.EmpID', 'e.EmpName', 's.*');
 
 /* Indexed column (used for fast and accurate table cardinality) */
 $sIndexColumn = "e.EmpID";
@@ -15,25 +15,25 @@ $sTable = "employee_detail e,salary_detail s";
 /* Paging */
 $sLimit = "";
 if (isset($_GET['iDisplayStart']) && $_GET['iDisplayLength'] != '-1') {
-   $sLimit = "LIMIT " . mysql_real_escape_string($_GET['iDisplayStart']) . ", " .
-           mysql_real_escape_string($_GET['iDisplayLength']);
+    $sLimit = "LIMIT " . mysql_real_escape_string($_GET['iDisplayStart']) . ", " .
+        mysql_real_escape_string($_GET['iDisplayLength']);
 }
 
 /* Ordering */
 
 if (isset($_GET['iSortCol_0'])) {
-   $sOrder = "ORDER BY  ";
-   for ($i = 0; $i < intval($_GET['iSortingCols']); $i++) {
-      if ($_GET['bSortable_' . intval($_GET['iSortCol_' . $i])] == "true") {
-         $sOrder .= $aColumns[intval($_GET['iSortCol_' . $i])] . "
+    $sOrder = "ORDER BY  ";
+    for ($i = 0; $i < intval($_GET['iSortingCols']); $i++) {
+        if ($_GET['bSortable_' . intval($_GET['iSortCol_' . $i])] == "true") {
+            $sOrder .= $aColumns[intval($_GET['iSortCol_' . $i])] . "
 				 	" . mysql_real_escape_string($_GET['sSortDir_' . $i]) . ", ";
-      }
-   }
+        }
+    }
 
-   $sOrder = substr_replace($sOrder, "", -2);
-   if ($sOrder == "ORDER BY") {
-      $sOrder = "";
-   }
+    $sOrder = substr_replace($sOrder, "", -2);
+    if ($sOrder == "ORDER BY") {
+        $sOrder = "";
+    }
 }
 
 /*
@@ -45,12 +45,12 @@ if (isset($_GET['iSortCol_0'])) {
 
 $sWhere = 'WHERE e.EmpID = s.EmpID ';
 if ($_GET['sSearch'] != "") {
-   $sWhere = $sWhere." AND (";
-   for ($i = 0; $i < count($aColumns); $i++) {
-      $sWhere .= $aColumns[$i] . " LIKE '%" . mysql_real_escape_string($_GET['sSearch']) . "%' OR ";
-   }
-   $sWhere = substr_replace($sWhere, "", -3);
-   $sWhere .= ')';
+    $sWhere = $sWhere . " AND (";
+    for ($i = 0; $i < count($aColumns); $i++) {
+        $sWhere .= $aColumns[$i] . " LIKE '%" . mysql_real_escape_string($_GET['sSearch']) . "%' OR ";
+    }
+    $sWhere = substr_replace($sWhere, "", -3);
+    $sWhere .= ')';
 }
 
 $sQuery = "SELECT SQL_CALC_FOUND_ROWS " . str_replace(" , ", " ", implode(", ", $aResultColumns)) . "
@@ -87,21 +87,22 @@ $output = array(
 );
 
 for ($i = 0; $i < count($rResult); $i++) {
-   $row = array();
-   $row = $rResult[$i];
-   
-   $start = strtotime(date('Y-m-d'));
-   $end = strtotime($row['IncrementDate']);
-   $days_between = ($end - $start) / 86400;
-   if($days_between<32){
-       $row['yes'] = "<a href='EmployeeSalaryUpdate.php?EmpID={$row['EmpID']}' ><img src='images/yes.gif' class='editIcon'></a>";
-   }else{
-       $row['yes'] = "";
-   }
-   $row['edit'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' ><img src='images/edit.gif' ></a>";
-   $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='images/delete.gif' ></a>";
-   
-   $output['aaData'][] = $row;
+    $row = array();
+    $row = $rResult[$i];
+
+    $start = strtotime(date('Y-m-d'));
+    $end = strtotime($row['IncrementDate']);
+    $days_between = ($end - $start) / 86400;
+    if ($days_between < 32) {
+        $row['yes'] = "<a href='EmployeeSalaryUpdate.php?EmpID={$row['EmpID']}' ><img src='images/yes.gif' class='editIcon'></a>";
+    } else {
+        $row['yes'] = "";
+    }
+    $row['edit'] = "<a href='EmployeeSalary.php?EmpID={$row['EmpID']}' ><img src='images/edit.gif' ></a>";
+    $row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='images/delete.gif' ></a>";
+    //$row['delete'] = "<a val='{$row['EmpID']}' id='delEmp' ><img src='images/delete.gif' ></a>";
+
+    $output['aaData'][] = $row;
 }
 
 echo json_encode($output);

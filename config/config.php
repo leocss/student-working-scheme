@@ -9,8 +9,8 @@ define("DB_USERNAME", "root");
 define("DB_PASSWORD", "");
 
 
-define("ROOT", "http://localhost/AttSytem/");
-define("BaseROOT", "http://localhost/AttSytem/");
+//define("ROOT", "http://localhost/AttSytem/");
+//define("BaseROOT", "http://localhost/AttSytem/");
 
 
 //change post data
