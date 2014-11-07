@@ -2,15 +2,14 @@
 include 'config/config.php';
 include 'config/session.php';
 //include 'class/dbclass.php';
-include'config.php';
+include 'config.php';
 //include ('printform.php');
 
-	$conn = mysql_connect('localhost', 'root', '');
-	 if (!$conn)
-     {
-         die('Could not connect: ' . mysql_error());
-     }
-	mysql_select_db("attendance_system", $conn);
+$conn = mysql_connect('localhost', 'root', '');
+if (!$conn) {
+    die('Could not connect: ' . mysql_error());
+}
+mysql_select_db("attendance_system", $conn);
 
 
 
@@ -25,9 +24,9 @@ include'config.php';
 <head>
 
     <script>
-function MM_popupMsg(msg) { //v1.0
-  alert(msg);
-}
+        function MM_popupMsg(msg) { //v1.0
+            alert(msg);
+        }
     </script>
     <!--        end Data tabel-->
 
@@ -38,7 +37,7 @@ function MM_popupMsg(msg) { //v1.0
 <div id="toyo" onfocus="MM_popupMsg('Are you sure you want to delete Employee?')">
     <?php
 
-    $id =$_REQUEST['EmpID'];
+    $id = $_REQUEST['EmpID'];
 
 
     // sending query
