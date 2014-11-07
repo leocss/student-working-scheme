@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="processEmpAttendance.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="processEmpAttendance.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process/processEmpAttendance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.23287672" vertical-offset="0" max-vertical-offset="1700">
+            <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoolWater.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="554" column="0" selection-start="8625" selection-end="8625" vertical-scroll-proportion="8.36876" vertical-offset="4221" max-vertical-offset="9520">
               <folding />
             </state>
           </provider>
@@ -121,6 +130,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student-working-scheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student-working-scheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -162,7 +185,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -235,7 +258,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="29" selection-start="2938" selection-end="2938" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="7361" />
+        <state line="178" column="29" selection-start="2938" selection-end="2938" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="7361">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
@@ -360,11 +385,6 @@
         <state line="19" column="2" selection-start="473" selection-end="473" vertical-scroll-proportion="0.55593807" vertical-offset="0" max-vertical-offset="581" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="0" selection-start="8625" selection-end="8625" vertical-scroll-proportion="4.255973" vertical-offset="6924" max-vertical-offset="9520" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="40" selection-start="113" selection-end="113" vertical-scroll-proportion="0.15232974" vertical-offset="0" max-vertical-offset="558" />
@@ -477,7 +497,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/process/processEmpAttendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.23287672" vertical-offset="0" max-vertical-offset="1700">
+        <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/CoolWater.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="554" column="0" selection-start="8625" selection-end="8625" vertical-scroll-proportion="8.36876" vertical-offset="4221" max-vertical-offset="9520">
           <folding />
         </state>
       </provider>
